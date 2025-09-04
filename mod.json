@@ -1,0 +1,51 @@
+{
+	"geode": "4.8.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "cmds.megahack_jumpscare",
+	"name": "MegaHack Jumpscare",
+	"version": "v1.0.0",
+	"developer": "CMDs",
+	"description": "Jumpscare how in Mega Hack",
+	"settings": {
+		"enable": {
+			"type": "bool",
+			"default": true,
+			"name": "Enable Jumpscare"
+		},
+		"jumpscare": {
+			"type": "title",
+			"name": "Jumpscare"
+		},
+		"sound": {
+			"type": "bool",
+			"default": true,
+			"name": "Sound",
+			"enable-if": "enable"
+		},
+		"flicker": {
+			"type": "bool",
+			"default": true,
+			"name": "Flicker",
+			"enable-if": "enable"
+		}
+	},
+	"links": {
+		"source": "https://github.com/oki333ed/Rand-BG-Color"
+	},
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	},
+	"resources": {
+    	"files": [
+      		"resources/sounds/jumpscareAudio.mp3"
+    	],
+	    "sprites": [
+    	  	"resources/sprites/jumpscare.png"
+		]
+	}
+}
